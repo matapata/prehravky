@@ -79,27 +79,27 @@
     font-size: calc(50% + 1vw + 1vh);
   }
   .change-img-1 {
-    content: url('assets/images/guh_hratky-2022__0002.jpg');
+    content: url('/assets/images/guh_hratky-2022__0002.jpg');
   }
   @media only screen and (max-width: 700px) {
     .change-img-1 {
-      content: url('assets/images/guh_hratky-2022__002.jpg');
+      content: url('/assets/images/guh_hratky-2022__002.jpg');
     }
   }
   .change-img-2 {
-    content: url('assets/images/guh_hratky-2022__0027.jpg');
+    content: url('/assets/images/guh_hratky-2022__0027.jpg');
   }
   @media only screen and (max-width: 700px) {
     .change-img-2 {
-      content: url('assets/images/guh_hratky-2022__027.jpg');
+      content: url('/assets/images/guh_hratky-2022__027.jpg');
     }
   }
   .change-img-3 {
-    content: url('assets/images/guh_hratky-2022__0050.jpg');
+    content: url('/assets/images/guh_hratky-2022__0050.jpg');
   }
   @media only screen and (max-width: 700px) {
     .change-img-3 {
-      content: url('assets/images/guh_hratky-2022__050.jpg');
+      content: url('/assets/images/guh_hratky-2022__050.jpg');
     }
   }
   #topBtn {
