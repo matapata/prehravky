@@ -8,8 +8,8 @@
     <link rel="icon" type="image/x-icon" href="assets/images/prehravky-fav.ico">
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/bootstrap/css/styles.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <style>
       .overlay-dark {
@@ -51,6 +51,12 @@
       .centered-text2 {
         position: absolute;
         top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .centered-text3 {
+        position: absolute;
+        top: 90%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
@@ -147,15 +153,15 @@
       </nav>-->
       <header>
         <div class="carousel-inner">
-          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-interval="3000">
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active" data-interval="3000">
                 <img class="d-block w-auto vh-100 img-fluid overlay-dark change-img-1" alt="..." style="object-fit: cover;">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-interval="3000">
                 <img class="d-block w-auto vh-100 img-fluid overlay-dark change-img-2" alt="..." style="object-fit: cover;">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-interval="3000">
                 <img class="d-block w-auto vh-100  img-fluid overlay-dark change-img-3" alt="..." style="object-fit: cover;">
               </div>
             </div>
@@ -166,6 +172,12 @@
                   <div class="text-center font-lighter"><a href="#poradatele" class="unlink">POŘADATELÉ</a></div>
                   <div class="text-center mx-sm-5 mx-3 font-lighter"><a href="#vstupenky" class="unlink">VSTUPENKY</a></div>
                   </div>
+              </div>
+              <div class="centered-text3 text-white text-responsive">
+                <div class="d-flex justify-content-center">
+                  <a href="https://www.instagram.com/prehravky/" class="text-decoration-none text-reset"><i class="fa-brands fa-instagram fa-xl mx-sm-3 mx-1"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100087479694714" class="text-decoration-none text-reset"><i class="fa-brands fa-facebook fa-xl mx-sm-3 mx-1"></i></a>
+                </div>
               </div>
           </div>
         </div>
