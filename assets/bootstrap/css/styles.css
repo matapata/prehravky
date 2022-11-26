@@ -16,3 +16,115 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
+.overlay-dark {
+    filter: brightness(50%);
+  }
+  body::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 6px rgba(150, 150, 150, 0.3);
+    border-radius: 10px;
+    background-color: #000000;
+  }
+
+  body::-webkit-scrollbar
+  {
+    width: 12px;
+    background-color: #000000;
+  }
+
+  body::-webkit-scrollbar-thumb
+  {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #1f1e1e;
+  }
+  .centered-text {
+    position: absolute;
+    top: 25%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+  @media only screen and (max-width: 700px) {
+    .centered-text {
+      position: absolute;
+      top: 25%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .centered-text2 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .centered-text3 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  a.unlink {
+    color: inherit;
+    text-decoration: none;
+  }
+  a.unlink:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+  .text-responsive {
+    font-size: calc(10% + 1vw + 1vh);
+  }
+  .text-responsive-h {
+    font-size: calc(50% + 1vw + 1vh);
+  }
+  .change-img-1 {
+    content: url('assets/images/guh_hratky-2022__0002.jpg');
+  }
+  @media only screen and (max-width: 700px) {
+    .change-img-1 {
+      content: url('assets/images/guh_hratky-2022__002.jpg');
+    }
+  }
+  .change-img-2 {
+    content: url('assets/images/guh_hratky-2022__0027.jpg');
+  }
+  @media only screen and (max-width: 700px) {
+    .change-img-2 {
+      content: url('assets/images/guh_hratky-2022__027.jpg');
+    }
+  }
+  .change-img-3 {
+    content: url('assets/images/guh_hratky-2022__0050.jpg');
+  }
+  @media only screen and (max-width: 700px) {
+    .change-img-3 {
+      content: url('assets/images/guh_hratky-2022__050.jpg');
+    }
+  }
+  #topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    display: none;
+    background-color: #1f1e1e;
+    color: white;topBtn
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+  }
+
+  #topBtn:hover {
+    background-color: #1d1d1d;
+  }
+  .img-size{
+    width: 110%;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .img-size {
+      width: 130%;
+    }
+  }
