@@ -48,6 +48,10 @@
         </div>
       </header>
     <main class="bg-black">
+      <div>
+        <div class="text-center font-heading text-responsive-h text-white"><p id="countdownHeader"></p></div>
+        <div class="text-center font-heading text-responsive-h text-white"><p id="countdown"></p></div>
+      </div>
       <div class="container pt-5 bg-black" id="ucastnici">
         <div class="text-center font-heading text-responsive-h text-white">ÚČASTNÍCI</div>
       </div>
@@ -64,6 +68,26 @@
       <div class="pt-5 bg-black" id="footer"></div>
     </main>
     <script>
+      var countDownDate = new Date("Jan 28, 2023 19:00:00").getTime();
+      var x = setInterval(function() {
+        var distance = countDownDate - now;
+        
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdownHeader").innerHTML = "Do akce zbývá"
+        document.getElementById("countdown").innerHTML = days + " Dnů " + hours + " Hodin "
+        + minutes + " Minut " ;
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdownHeader").innerHTML = "Přehrávky proběhly dne";
+          document.getElementById("countdown").innerHTML = "28 . 1 . 2023";
+        }
+      }, 1000);
+
       let mybutton = document.getElementById("topBtn");
       window.onscroll = function() {scrollFunction()};
       function scrollFunction() {
@@ -77,6 +101,8 @@
         document.body.scrollTop = 0; 
         document.documentElement.scrollTop = 0;
       }
+
+      
     </script>
 </body>
 </html>
