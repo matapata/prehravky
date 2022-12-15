@@ -75,6 +75,9 @@
   .text-responsive {
     font-size: calc(10% + 1vw + 1vh);
   }
+  .text-responsive-l {
+    font-size: calc(100% + 1vw + 1vh);
+  }
   .text-responsive-h {
     font-size: calc(50% + 1vw + 1vh);
   }
