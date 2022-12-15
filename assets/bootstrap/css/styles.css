@@ -78,6 +78,9 @@
   .text-responsive-h {
     font-size: calc(50% + 1vw + 1vh);
   }
+  .text-responsive-ht {
+    font-size: calc(25% + 1vw + 1vh);
+  }
   .change-img-1 {
     content: url('/assets/images/guh_hratky-2022__0002.jpg');
   }
