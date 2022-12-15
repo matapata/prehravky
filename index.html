@@ -101,6 +101,7 @@
       function topFunction() {
         document.body.scrollTop = 0; 
         document.documentElement.scrollTop = 0;
+        history.replaceState([],"",window.location.href.split('#')[0])
       }
 
       
