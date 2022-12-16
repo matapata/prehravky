@@ -12,6 +12,11 @@
     font-weight: 300;
 }
 
+.font-text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
 .font-lighter:hover{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -133,4 +138,22 @@
     .img-size {
       width: 130%;
     }
+  }
+  .bg-color-gray {
+    background-color: #1f1e1e;
+  }
+  .text-color-gray {
+    color: #CFCFCF;
+  }
+  .border-gray{
+    border-color: #CFCFCF;
+  }
+  .shadow-white {
+    /* box-shadow: 0 0.5rem 1rem #CFCFCF; */
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.10));
+    border-radius:25px;
+  }
+  .rounded-img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
   }
